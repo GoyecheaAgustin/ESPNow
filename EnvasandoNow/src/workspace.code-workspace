@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"name": "EnvasandoNow",
+			"path": ".."
+		},
+		{
+			"name": "EnvasandoNowReceptor",
+			"path": "..\\..\\EnvasandoNowReceptor\\EnvasandoNowReceptor"
+		}
+	],
+	"settings": {}
+}
