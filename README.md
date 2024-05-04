@@ -2,6 +2,10 @@
 
 Este repositorio contiene el código fuente en C++ para el desarrollo de un sistema de detección y aviso de encendido de bombas hidrantes para riego contra incendios. El proyecto utiliza un ESP32 para implementar el sistema, aprovechando su capacidad de conectividad WiFi para enviar notificaciones y comandos a través de mensajes de texto y un bot de Telegram.
 
+
+![diagrama de bloques](https://github.com/GoyecheaAgustin/ESPNow/assets/104398552/c529619f-b802-42c4-ade9-0f46e2b6655b)
+
+
 ## Características Principales
 
 - **Detección de señales:** El sistema detecta el estado de al menos cuatro señales discretas (24 Vcc) y dos señales analógicas (0-10 Vcc) relacionadas con eventos de incendio.
