@@ -1,10 +1,22 @@
 # Sistema de Detección y Aviso de Encendido de Bombas Hidrantes para Riego contra Incendios
 
-Este repositorio contiene el código fuente en C++ para el desarrollo de un sistema de detección y aviso de encendido de bombas hidrantes para riego contra incendios. El proyecto utiliza un ESP32 para implementar el sistema, aprovechando su capacidad de conectividad WiFi para enviar notificaciones y comandos a través de mensajes de texto y un bot de Telegram.
+Este repositorio contiene el código fuente en C++ para el desarrollo de un sistema de detección y aviso de encendido de bombas hidrantes para riego contra incendios. El proyecto utiliza dos dispositivos ESP32, uno en la placa principal y otro en la placa remota, que se comunican utilizando el protocolo ESPNOW para intercambiar información de forma inalámbrica.
 
+## Diagramas
 
-![diagrama de bloques](https://github.com/GoyecheaAgustin/ESPNow/assets/104398552/c529619f-b802-42c4-ade9-0f46e2b6655b)
+A continuación, se muestran los diagramas de la placa principal y la placa remota del sistema:
 
+### Diagrama de la Placa Principal
+
+![diagrama de bloques1](https://github.com/GoyecheaAgustin/ESPNow/assets/104398552/ed7e251d-0658-4b09-b8cc-52c81ca9c1ea)
+
+Este diagrama muestra el diseño de la placa principal, que incluye el ESP32, las entradas y salidas del sistema, y las conexiones para la comunicación inalámbrica.
+
+### Diagrama de la Placa Remota
+
+![diagrama de bloques](https://github.com/GoyecheaAgustin/ESPNow/assets/104398552/bfa0c017-5ffa-47a7-a091-440a4452be63)
+
+Este diagrama muestra el diseño de la placa remota, que también utiliza un ESP32. La placa remota se comunica con la placa principal mediante el protocolo ESPNOW para informar sobre el estado de las entradas digitales del sistema.
 
 ## Características Principales
 
@@ -18,51 +30,5 @@ Este repositorio contiene el código fuente en C++ para el desarrollo de un sist
 
 - **Construcción modular:** Utiliza componentes modulares que se pueden encontrar fácilmente en el mercado local para facilitar la construcción y mantenimiento del sistema.
 
-## Estructura del Repositorio
-
-- **/src:** Contiene el código fuente en C++ para el ESP32, incluyendo funciones para la detección, notificación y control de eventos. También incluye el código para interactuar con el bot de Telegram.
-
-- **/docs:** Documentación del proyecto, incluyendo manuales de usuario y diagramas de diseño.
-
-- **/hardware:** Archivos relacionados con los componentes de hardware y la placa ESP32.
-
-- **/config:** Archivos de configuración para ajustar parámetros del sistema, incluyendo la configuración del bot de Telegram.
-
-- **/tests:** Pruebas unitarias y casos de prueba para verificar el correcto funcionamiento del sistema.
-
-## Requisitos
-
-- **ESP32:** El proyecto utiliza un ESP32 como plataforma de hardware.
-
-- **Compilador C++:** Asegúrate de tener un compilador de C++ compatible para compilar el código fuente.
-
-- **Librerías y dependencias:** Consulta la documentación en la carpeta `docs` para obtener detalles sobre las librerías y dependencias necesarias, incluidas aquellas para la interacción con Telegram.
-
-## Cómo Compilar y Ejecutar
-
-1. **Compila el código:** Navega a la carpeta `src` y compila el código utilizando el compilador C++ para ESP32.
-
-2. **Configura el sistema:** Personaliza los archivos de configuración en la carpeta `config`, incluyendo los parámetros de conexión WiFi y la configuración del bot de Telegram.
-
-3. **Sube el código:** Sube el código compilado al ESP32.
-
-4. **Ejecuta el sistema:** El ESP32 comenzará a ejecutar el sistema una vez que se haya subido el código.
-
-## Contribuciones
-
-Si deseas contribuir a este proyecto:
-
-1. Haz un fork del repositorio.
-2. Crea una rama con tus cambios (`git checkout -b mi-rama`).
-3. Haz commit de tus cambios (`git commit -am 'Descripción de tus cambios'`).
-4. Envía tus cambios a tu fork (`git push origin mi-rama`).
-5. Abre un pull request para revisar tus cambios.
-
-## Licencia
-
-Este proyecto está bajo la licencia MIT. Consulta el archivo [LICENSE](LICENSE) para obtener más detalles.
-
-## Contacto
-
-Si tienes alguna pregunta o sugerencia sobre el proyecto, no dudes en contactarnos. Los detalles de contacto se encuentran en la documentación.
+- **Comunicación ESPNOW:** La placa principal y la placa remota se comunican mediante el protocolo ESPNOW del ESP32, permitiendo un intercambio rápido y eficiente de datos.
 
