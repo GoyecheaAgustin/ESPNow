@@ -8,13 +8,14 @@ A continuación, se muestran los diagramas de la placa principal y la placa remo
 
 ### Diagrama de la Placa Principal
 
-![diagrama de bloques1](https://github.com/GoyecheaAgustin/ESPNow/assets/104398552/ed7e251d-0658-4b09-b8cc-52c81ca9c1ea)
+![diagrama de bloques](https://github.com/GoyecheaAgustin/ESPNow/assets/104398552/bfa0c017-5ffa-47a7-a091-440a4452be63)
 
 Este diagrama muestra el diseño de la placa principal, que incluye el ESP32, las entradas y salidas del sistema, y las conexiones para la comunicación inalámbrica.
 
 ### Diagrama de la Placa Remota
 
-![diagrama de bloques](https://github.com/GoyecheaAgustin/ESPNow/assets/104398552/bfa0c017-5ffa-47a7-a091-440a4452be63)
+![diagrama de bloques1](https://github.com/GoyecheaAgustin/ESPNow/assets/104398552/ed7e251d-0658-4b09-b8cc-52c81ca9c1ea)
+
 
 Este diagrama muestra el diseño de la placa remota, que también utiliza un ESP32. La placa remota se comunica con la placa principal mediante el protocolo ESPNOW para informar sobre el estado de las entradas digitales del sistema.
 
